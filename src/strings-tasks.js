@@ -148,11 +148,11 @@ function repeatString(str, times) {
  *   removeFirstOccurrences('ABABAB', 'BA') => 'ABAB'.
  */
 function removeFirstOccurrences(str, value) {
-  const occurenceInd = str.indexOf(value);
-  if (occurenceInd === -1) return str;
+  const occurrenceInd = str.indexOf(value);
+  if (occurrenceInd === -1) return str;
   return str
-    .slice(0, occurenceInd)
-    .concat(str.slice(occurenceInd + value.length));
+    .slice(0, occurrenceInd)
+    .concat(str.slice(occurrenceInd + value.length));
 }
 
 /**
